@@ -166,8 +166,8 @@ let userList = [
 // Функція для зміни ролі всіх осіб у масиві
 function changeRole(array, newRole) {
   // Ітеруємося по масиву об'єктів за допомогою циклу "for of"
-  for (const role of userList) {
-    userList[role] = newRole;
+  for (let list of array) {
+    list.role = newRole;
   }
   // Змінюємо роль кожного користувача на нове ім'я
   console.log(array);
@@ -258,8 +258,8 @@ function addProperty(array) {
 console.log("Завдання 14 ====================================");
 // Створимо масив newArr з новою властивістю за допомогої нашої функції в яку передамо [1, 2, 3, 4, 5]
 // const newArray = [1, 2, 3, 4, 5];
+let newArr = addProperty([1, 2, 3, 4, 5]);
 
-const newArr = [1, 2, 3, 4, 5];
 // addProperty.newArr = [1, 2, 3, 4, 5];
 // const newArray = function addProperty() {
 //   [1, 2, 3, 4, 5];
